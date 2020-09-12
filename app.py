@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from flask_ngrok import run_with_ngrok
+#from flask_ngrok import run_with_ngrok
 import datetime
 import os
 import re
@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
-run_with_ngrok(app)
+#run_with_ngrok(app)
 
 @app.route('/', methods=['GET'])
 def index():
